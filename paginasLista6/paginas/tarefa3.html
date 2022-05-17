@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> tarefa 3</title>
+	</head>
+	<body>
+		
+        <a href="../index.html">voltar</a>
+		<script>
+            //entrada de dados
+            const codigo = prompt('digite o codigo [1 / 2 / 3]');
+            const quantidade = prompt('Digite a quantidade de peças');
+            const quantidadeInt = parseInt(quantidade);
+            //processamento
+            if(codigo == 1)
+            {
+                const valor1 = quantidadeInt * 10;
+                //saida de dados
+                alert(' vai custar R$' + valor1);
+            }
+            if(codigo == 2)
+            {
+                const valor2 = quantidadeInt * 30;
+                //saida de dados
+                alert(' vai custar R$' + valor2);
+            }
+            if(codigo == 3)
+            {
+                const valor3 = quantidadeInt * 40;
+                //saida de dados
+                alert(' vai custar R$' + valor3);
+            }
+
+
+        </script>
+	</body>
+
+</html>
