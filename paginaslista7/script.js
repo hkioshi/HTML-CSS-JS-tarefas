@@ -162,10 +162,65 @@ function definirTriangulo()
             triangulo.value = 'escaleno'
         }
     }
-        
-    
+}
+
+
+function fazerAdicao()
+{
+   let primeiroNumero = document.getElementById("numeroUm");
+   let primeiroNumeroVal = numeroUm.value;
+
+   let segundoNumero = document.getElementById("numeroDois");
+   let segundoNumeroVal = numeroDois.value;
+
+   let total = document.getElementById("resultado");
+   
+   resultado.value = parseInt(primeiroNumeroVal) + parseInt(segundoNumeroVal);
 
 
 }
 
+function fazerSubtracao()
+{
+   let primeiroNumero = document.getElementById("numeroUm");
+   let primeiroNumeroVal = numeroUm.value;
 
+   let segundoNumero = document.getElementById("numeroDois");
+   let segundoNumeroVal = numeroDois.value;
+
+   let total = document.getElementById("resultado");
+   
+   resultado.value = primeiroNumeroVal - segundoNumeroVal;
+
+
+}
+
+function fazerMultiplicacao()
+{
+   let primeiroNumero = document.getElementById("numeroUm");
+   let primeiroNumeroVal = numeroUm.value;
+
+   let segundoNumero = document.getElementById("numeroDois");
+   let segundoNumeroVal = numeroDois.value;
+
+   let total = document.getElementById("resultado");
+   
+   resultado.value = primeiroNumeroVal * segundoNumeroVal;
+
+
+}
+
+function fazerDivisao()
+{
+   let primeiroNumero = document.getElementById("numeroUm");
+   let primeiroNumeroVal = numeroUm.value;
+
+   let segundoNumero = document.getElementById("numeroDois");
+   let segundoNumeroVal = numeroDois.value;
+
+   let total = document.getElementById("resultado");
+   
+   resultado.value = primeiroNumeroVal / segundoNumeroVal;
+
+
+}
