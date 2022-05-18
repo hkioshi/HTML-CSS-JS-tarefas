@@ -122,4 +122,16 @@ function limpar()
     textoAtribuido.value = '';
 }
 
+function incrementar()
+{
+    let numeroDigitado = document.getElementById("numero");
+    let numeroDigitadoVal = numero.value;
+    numero.value++;
+}
 
+function decrementar()
+{
+    let numeroDigitado = document.getElementById("numero");
+    let numeroDigitadoVal = numero.value;
+    numero.value--;
+}
