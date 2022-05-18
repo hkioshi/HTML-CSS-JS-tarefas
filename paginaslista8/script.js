@@ -13,3 +13,20 @@ function gerarp()
 
     
 }
+
+
+function gerarh3()
+{
+    let texto = document.getElementById('gerarTitulo');
+    let textoVal = gerarTitulo.value;
+    let elemento_p = document.getElementById('id');
+    if (elemento_p == undefined) 
+    {
+        elemento_p = document.createElement('h3');
+        elemento_p.id = 'id';
+        document.body.appendChild(elemento_p);
+    }
+        elemento_p.textContent = textoVal;
+
+    
+}
