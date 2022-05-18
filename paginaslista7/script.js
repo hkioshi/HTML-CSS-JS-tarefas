@@ -108,5 +108,18 @@ function juntarNomes()
    
 function atribuir()
 {
-    
+    let mensagem = document.getElementById("primeiroTexto");
+    let memoria = document.getElementById("textoAtribuido");
+    let mensagemValue = primeiroTexto.value
+
+    textoAtribuido.value = mensagemValue;
+    primeiroTexto.value = '';
 }
+
+function limpar()
+{
+    let memoria = document.getElementById("textoAtribuido");
+    textoAtribuido.value = '';
+}
+
+
