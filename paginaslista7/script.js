@@ -135,3 +135,37 @@ function decrementar()
     let numeroDigitadoVal = numero.value;
     numero.value--;
 }
+
+function definirTriangulo()
+{
+    const primeiroLado = document.getElementById("lado1");
+    const segundoLado = document.getElementById("lado2");
+    const terceiroLado = document.getElementById("lado3");
+    const qualTriangulo = document.getElementById("triangulo");
+
+    let primeiroLadoVal = lado1.value;
+    let segundoLadoVal = lado2.value;
+    let terceiroLadoVal = lado3.value;
+
+    if(primeiroLadoVal == segundoLadoVal && segundoLadoVal == terceiroLadoVal && terceiroLadoVal == primeiroLadoVal)
+    {
+        triangulo.value = 'equilatero';
+    }
+    else
+    {
+        if(primeiroLadoVal == segundoLadoVal && terceiroLadoVal != primeiroLadoVal || segundoLadoVal == terceiroLadoVal && segundoLadoVal != primeiroLadoVal || terceiroLadoVal == primeiroLadoVal && terceiroLadoVal != segundoLadoVal)
+        {
+            triangulo.value = 'isoceles'
+        }
+        else
+        {
+            triangulo.value = 'escaleno'
+        }
+    }
+        
+    
+
+
+}
+
+
