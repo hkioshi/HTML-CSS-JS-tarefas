@@ -30,3 +30,10 @@ function gerarh3()
 
     
 }
+
+function gerarImagem()
+{
+    const gerarImg = document.createElement("img");
+    gerarImg.src = '../imagens/imagem.jpg';
+    document.body.appendChild(gerarImg);
+}
